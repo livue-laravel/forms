@@ -1,0 +1,25 @@
+{
+    "name": "primix/forms",
+    "description": "Form builder for Primix admin panel framework",
+    "license": "MIT",
+    "type": "library",
+    "require": {
+        "php": "^8.2",
+        "primix/support": "self.version",
+        "primix/actions": "self.version"
+    },
+    "autoload": {
+        "psr-4": {
+            "Primix\\Forms\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Primix\\Forms\\PrimixFormsServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
